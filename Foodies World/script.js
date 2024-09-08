@@ -1,30 +1,35 @@
 let products = {
     data: [
       {
-        productName: "Chicken Biriyani",
+        variety:"Chicken Variety",
+        productName: "Biriyani",
         category: "chicken",
         price: "RS.150",
         image: "chicken/biriyani.jpg",
       },
       {
+        variety:"Chicken Variety",
         productName: "Chicken Chilli",
         category: "chicken",
         price: "RS.180",
         image: "chicken/chilli.jpg",
       },
       {
+        variety:"Chicken Variety",
         productName: "Chicken Grill",
         category: "chicken",
         price: "RS.540",
         image: "chicken/grill.jpg",
       },
       {
+        variety:"Chicken Variety",
         productName: "Fried Chicken",
         category: "chicken",
         price: "RS.450",
         image: "chicken/kfc.jpg",
       },
       {
+        variety:"Sea Food",
         productName: "Crab Roast",
         category: "sea-food",
         price: "RS.250",
@@ -32,6 +37,7 @@ let products = {
       },
       
       {
+        variety:"Sea Food",
         productName: "Crab Fry",
         category: "sea-food",
         price: "RS.280",
@@ -39,85 +45,99 @@ let products = {
       },
       
       {
+        variety:"Sea Food",
         productName: "Prawn Chilli",
         category: "sea-food",
         price: "RS.140",
         image: "crab/prawnchill1.jpg",
       },
       {
+        variety:"Sea Food",
         productName: "Prawn Soup",
         category: "sea-food",
         price: "RS.150",
         image: "crab/prawnsoup.jpg",
       },
       {
+        variety:"Fish Variety",
         productName: "Fish Biriyani",
         category: "fish",
         price: "RS.400",
         image: "fish/fishbiriyani2.jpg",
       },
       {
-        productName: "Fish Fry",
+        variety:"Fish Variety",
+        productName: "Spicy Fish Fry",
         category: "fish",
         price: "RS.200",
         image: "fish/fishfry.jpg",
       },
       
       {
+        variety:"Fish Variety",
         productName: "Fish Gravy",
         category: "fish",
         price: "RS.250",
         image: "fish/fishgravy.jpg",
       },
       {
+        variety:"Fish Variety",
         productName: "Fish Grill",
         category: "fish",
         price: "RS.350",
         image: "fish/fishgrill.jpg",
       },
       {
+        variety:"Mutton Variety",
         productName: "Mutton Biriyani",
         category: "mutton",
         price: "RS.250",
         image: "mutton/biriyani.jpg",
       },
       {
+        variety:"Mutton Variety",
         productName: "Mutton Chukka",
         category: "mutton",
         price: "RS.180",
         image: "mutton/chukka.jpg",
       },
       {
+        variety:"Mutton Variety",
         productName: "Mutton Gravy",
         category: "mutton",
         price: "RS.240",
         image: "mutton/jose.jpg",
       },
       {
+        variety:"Mutton Variety",
         productName: "Mutton Kebab",
         category: "mutton",
         price: "RS.250",
         image: "mutton/kebab.jpg",
       },
       {
+        variety:"Desserts",
         productName: "Redvelvet Cake",
         category: "sweet",
         price: "RS.150",
         image: "sweets/red.jpg",
       },
       {
-        productName: "Rasamalai",
+        variety:"Desserts",
+        productName: "Rasamalai cake",
         category: "sweet",
         price: "RS.100",
         image: "sweets/r1.jpg",
       },
       {
+        variety:"Desserts",
         productName: "Gulab Jamun",
         category: "sweet",
         price: "RS.70",
         image: "sweets/jamun.jpg",
       },
       {
+        variety:"Desserts",
         productName: "Chocolate Cake",
         category: "sweet",
         price: "RS.350",
@@ -128,6 +148,8 @@ let products = {
   };
 function loading(){
 for(let i of products.data){
+    
+
     let card=document.createElement("div");
     card.classList.add("card","fish-sub");
 

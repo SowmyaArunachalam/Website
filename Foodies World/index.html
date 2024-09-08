@@ -14,27 +14,42 @@
         <nav>
             <h1>Foodies World</h1>
             <center><ul>
-                <li>Home | </li>
-                <li>About | </li>
-                <li>Product | </li>
-                <li>Contact Us </li>
+                <li><a href="#home">Home</a> | </li>
+                <li><a href="#about">About</a> | </li>
+                <li><a href="#product">Product</a> | </li>
+                <li><a href="#contact">Contact Us</a> </li>
             </ul></center><br>
         </nav>
         
     </header>
     
-    <main>
+    <main id="home">
         
         <div id="bg-image">
-        <img src="text2-removebg-preview.png" alt="">
+        <img src="bg/text2-removebg-preview.png" alt="">
 
             <div class="search"><input class="search-inp" type="search" >
-                <button class="search-btn" onclick="searchbar()">Search</button></div>
+                <button class="search-btn" onclick="searchbar()"><a href="#product">Search</a></button></div>
                
         </div>
     </main>
     <center>
- <div class="body"  style="background:linear-gradient(to right,#2fd3ecdc, #0d70ea);">
+    <div class="about" id="about">
+        <div class="layer"></div>
+        
+        <h1>Welcome to
+             Foodies World</h1><br>
+        
+       <img  class="abt-img" src="bg/b1-removebg-preview.png" alt="">
+        <h3>Make orders to satisfy your hunger.....</h3>
+        <p>Welcome to Foodies World!!!! We’re passionate about bringing the joy of cooking into your home. Our mission is to inspire you with simple, delicious recipes that anyone can create, no matter your skill level.
+
+            We offer a variety of dishes, from comforting classics to innovative new flavors, all made with fresh ingredients. Whether you're looking for a quick weeknight dinner or something special, we've got you covered.
+        </p>
+          <p> Join us on this culinary journey and discover the joy of cooking at home!</p>
+        
+    </div>
+ <div class="body" id="product" style="background:linear-gradient(to right,#2fd3ecdc, #0d70ea);">
     <div class="fish">
         <h1>Chicken Variety</h1>
         <div id="chicken">
@@ -74,9 +89,31 @@
         
     </div>
 </div>
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="details">
+
+        </div>
+        
+            <h1 class="i">Contact Us</h1><div class="form">
+                <img class="contact-img" src="undraw_portfolio_feedback_6r17.png" alt="">
+
+            <form action="">
+                <input type="text" class="input " placeholder="Your Name"><br>
+                <input type="email" class="input"placeholder="Email"><br>
+                <textarea class="input area"></textarea>
+                <br>
+                <button class="button-21" role="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 </center>
 </body>
 <script src="script.js"></script>
 </html>
 <!-- HTML !-->
+
+<!-- HTML !-->
+
 

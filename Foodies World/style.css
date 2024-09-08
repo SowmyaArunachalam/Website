@@ -1,135 +1,326 @@
-*{
-    padding: 0px;
-    margin: 0px;
+/* Reset padding and margin, and set box-sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-header{
+
+/* Set the background gradient for the body */
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0dccea, #0d70ea);
+}
+
+/* Header styles */
+header {
     padding: 2% 4%;
     background-color: #1B365C;
     color: white;
 }
-nav li{
+
+/* Navigation list styles */
+nav li {
     list-style-type: none;
     display: flex;
     float: left;
-    margin-left:20px;
-    
+    margin-left: 20px;
 }
-nav li:hover{
-    color:rgb(229, 223, 235);
-    cursor:pointer;
+
+/* Navigation link styles */
+nav li a {
+    text-decoration: none;
+    color: white;
 }
-nav h1{
+
+/* Navigation list item hover effect */
+nav li:hover {
+    color: rgb(229, 223, 235);
+    cursor: pointer;
+}
+
+/* Navigation heading styles */
+nav h1 {
     list-style-type: none;
     display: flex;
     float: left;
     font-size: x-large;
-    font-family: "Matemasie";
+    font-family: "Matemasie", sans-serif; /* Ensure a fallback font */
     letter-spacing: 2px;
 }
-ul{
+
+/* Styles for unordered list inside navigation */
+ul {
     position: absolute;
     left: 500px;
     margin-left: 30%;
-    font-family: "Matemasie";
+    font-family: "Matemasie", sans-serif; /* Ensure a fallback font */
     letter-spacing: 2px;
 }
-#bg-image{
-    background-image: url(bg.jpg);
+
+/* Background image for main section */
+#bg-image {
+    background-image: url("bg/bg.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
     background-size: cover;
 }
-.search{
+
+/* Search input styles */
+.search {
     position: absolute;
     left: 68%;
     bottom: 30%;
-
 }
 
-.search-inp{
+.search-inp {
     padding: 5px;
     height: 35px;
-    margin-right: 0px;
     width: 250px;
     background: transparent;
     border: 3px solid #1B365C;
     border-radius: 3px;
 }
 
-.search-inp:hover{
+/* Hover and focus states for search input */
+.search-inp:hover {
     border: 2px solid white;
 }
-.search-inp:focus{
+
+.search-inp:focus {
     border: 2px solid #1B365C;
 }
-.search-btn{
+
+/* Search button styles */
+.search-btn {
     width: 100px;
     height: 35px;
     background-color: #1B365C;
-    color: white;
-    margin-left: 0px;
+    margin-left: 0;
     position: relative;
     right: 4px;
 }
-.search-btn:hover{
+
+.search-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Hover state for search button */
+.search-btn:hover {
     border: 2px solid white;
 }
-#bg-image h1{
+
+/* Styles for text inside the background image section */
+#bg-image h1 {
     position: absolute;
     left: 55%;
     bottom: 40%;
     letter-spacing: 8px;
-    line-height:50px;
-    font-family: "Prompt";
+    line-height: 50px;
+    font-family: "Prompt", sans-serif; /* Ensure a fallback font */
     text-align: right;
 }
-.fish{
-    
-    padding:20px;
-    
+
+/* General fish section styling */
+.fish {
+    padding: 20px;
 }
-.fish-sub{
+
+.fish-sub {
+    width: 20vw;
     background-color: white;
     display: inline-block;
-    margin:20px;
-    padding:20px;
+    margin: 15px;
     box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.5);
-    text-align:center;
-    
+    text-align: center;
 }
-.fish img{
+
+.fish img {
     width: 200px;
     height: 200px;
     margin: 20px;
-    border-radius:10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
-body{
-   background-color: linear-gradient(to right,#0dccea, #0d70ea);
-}
-
-/* CSS */
+/* Button styling */
 .button-70 {
-  background-image: linear-gradient(#0dccea, #0d70ea);
-  border: 0;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: Montserrat,sans-serif;
-  font-size: .9em;
-  margin: 5px;
-  padding: 10px 15px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif; /* Ensure a fallback font */
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
+.button-70:hover{
+    cursor:pointer;
 
-main img{
+}
+/* Main image positioning */
+main img {
     position: absolute;
     left: 55%;
     bottom: 40%;
+
 }
+
+/* About section styling */
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-size: 100px;
+    background-size: cover;
+    color: black;
+    line-height: 35px;
+    }
+.about p,h3{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    top: -30%;
+    padding: 10px;
+    margin: 10px;
+}
+.about p{
+    font-size: 20px;
+    left: 20%;
+}
+
+.about h1{
+    font-size: 40px;
+    position: relative;
+    top:20%;
+    text-align: center;
+}
+
+.about h3{
+    font-size: 25px;
+    text-align: center;
+    left: 5%;
+}
+.abt-img{
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    top: 20%;
+}
+/*
+.layer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(13, 205, 234, 0.7), rgba(13, 112, 234, 0.9));
+    z-index: 1; 
+}
+*/
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.container{
+    margin-top: 5%;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
+
+.form{
+    position: relative;
+    left: 30%;
+    bottom: 50%;
+    padding: 30px;
+    display: inline;
+}
+
+.i{
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+.input{
+    width: 30%;
+    height: 30px;
+    padding: 2px 4px;
+    margin: 15px;
+    
+   
+}
+.input:focus{
+    border-style: none;
+}
+.input:hover{
+    border: 2px solid #3EB2FD;
+}
+.area{
+    height: 100px;
+    width: 30%;
+}
+
+.contact-img{
+    width: 40%;
+    display: inline;
+    position: relative;
+    right: 50%;
+    top: 50%;
+}
+
+/* CSS */
+.button-21 {
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-21:active,
+  .button-21:focus {
+    outline: none;
+  }
+  
+  .button-21:hover {
+    background-position: -20px -20px;
+  }
+  
+  .button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+  }
